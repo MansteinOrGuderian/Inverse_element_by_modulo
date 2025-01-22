@@ -8,7 +8,7 @@ void Finding_inverse_by_modulo_Info() { // Not info actual yet
 	std::cout << "Input: /forall a,b > 0\nOutput: gcd(a, b)\nInitial values:\nr_0 = a, r_1 = b\n";
 	std::cout << "r_0 = r_1 * q_1 + r_2\nr_1 = r_2 * q_2 + r_3\n...\nr_{i-1} = r_i * q_i + r_{i+1}\n";
 	std::cout << "...\nr_{n-2} = r_{n-1} * q_{n-1} + r_n\nr_{n-1} = r_n * q_n\ngcd(a, b) = r_n\n\n";
-	std::cout << "Calculating a^{-1}, using q_{i} with minus, except q_{1}:\n";
+	std::cout << "Calculating a^{-1}, using q_{i} with minuses. (In code except q_{1} see line 42):\n";
 	std::cout << "  |   | -q_{1} | -q_{2} | ... | -q_{i-1} | -q_i | -q_{i+1} | ... | -q_n\n";
 	std::cout << "0 | 1 |  t_{1} |  t_{2} | ... | t_{i-1} | t_i | t_{i+1} | ... | a^{-1} | modulo\n";
 	std::cout << "Where:\nt_{i+1} = -q_{i} * t_i + t_{i-1},	t_{i-1} = t_i,	t_i = t_{i+1}\n"; 
